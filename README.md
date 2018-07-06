@@ -3,22 +3,22 @@ A dynamic model learning program based on gym inverted pendulum environment, unk
 
 Before running the code, you need to register the newly built gym environment:
 
-Step 1:
+#####Step 1:
 copy pendulum_disturbance.py to gym/gym/envs/clasic_control
 
-Step 2:
+#####Step 2:
 open __init__.py in this folder, add a line:
-from gym.envs.classic_control.pendulum_disturbance import PendulumDisturbanceEnv
+        from gym.envs.classic_control.pendulum_disturbance import PendulumDisturbanceEnv
 
-Step 3:
+#####Step 3:
 open __init__.py in gym/gym/envs, add:
-register(
-    id='PendulumDisturbance-v0',
-    entry_point='gym.envs.classic_control:PendulumDisturbanceEnv',
-    max_episode_steps=200,
-)
+        register(
+        id='PendulumDisturbance-v0',
+        entry_point='gym.envs.classic_control:PendulumDisturbanceEnv',
+        max_episode_steps=200,
+        )
 
-Step 4:
+#####Step 4:
 rebuild gym: 
-cd gym
-pip install -e .
+        cd gym
+        pip install -e .
