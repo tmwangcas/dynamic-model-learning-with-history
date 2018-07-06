@@ -49,7 +49,7 @@ input_size  = observation_history_dim + action_dim
 output_size = observation_dim
 
 # sampling parameters
-num_eps_train = 8800  # number of episodes to collect for training dataset
+num_eps_train = 8000  # number of episodes to collect for training dataset
 num_eps_val   = 1000  # number of episodes to collect for validation dataset
 num_ep_steps  = 200   # number of steps in each episode
 
